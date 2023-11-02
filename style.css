@@ -6,46 +6,74 @@
   box-sizing: border-box;
 }
 
-
-
 body {
   font-family: 'Muli', sans-serif;
-  overflow: hidden;
   margin: 0;
+  width: 100%;
+  overflow-x: hidden;
 }
 
 header {
-  width: 100%;
-  display: grid;
-  grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
-  align-items: center;
-  background-color: steelblue;
-  padding: 2vw;
-
-
-
+  display: flex;
+  justify-content: center;
+  background-color: rgb(127, 157, 182);
 }
 
 
 
-.main {
+header ul {
+  list-style-type: none;
+  width: 100%;
+
+}
+
+header ul li {
+  display: inline-block;
+  margin: 40px 80px 40px 80px;
+}
+
+header ul li a {
+  color: white;
+  text-decoration: none;
+
+  font-size: 16px;
+}
+
+main {
+  background-color: rgb(242, 244, 245)
+}
+
+.section-cards-logo {
   display: flex;
   flex-direction: row;
-
+  margin: 20px;
 
 }
 
-.sessao-apresentaçao {
+.card-logo {
   display: grid;
   grid-template-columns: 1fr;
-  grid-template-rows: 1fr;
+  grid-template-rows: 1fr 1fr;
+  padding: 5px;
+  gap: 5px;
+  width: 50%;
+  justify-items: center;
+  background-color: #F2F4F5;
+  text-shadow: aquamarine;
 
+}
+
+.texto-lateral {
+  margin-top: 30px;
+  font-size: 24px;
+  align-items: start;
+  text-align: center;
 }
 
 .container {
   display: flex;
   width: 90vw;
+
 
 }
 
@@ -53,9 +81,10 @@ header {
   background-size: auto 100%;
   background-position: center;
   background-repeat: no-repeat;
-  height: 80vh;
+  height: 77vh;
   border-radius: 50px;
-  color: blue cursor: pointer;
+  color: whitesmoke;
+  cursor: pointer;
   flex: 0.5;
   margin: 10px;
   position: relative;
@@ -81,16 +110,22 @@ header {
   transition: opacity 0.3s ease-in 0.4s;
 }
 
+.textos-finais {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  border: solid 1px blue;
+}
+
 .rodape {
   background-color: steelblue;
   padding: 1vw;
+  width: 100%
 }
 
 
 @media(max-width: 480px) {
-  .container {
-    width: 100vw;
-  }
+
 
   .painel:nth-of-type(4),
   .painel:nth-of-type(5) {
