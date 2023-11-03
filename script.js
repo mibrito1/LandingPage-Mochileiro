@@ -13,3 +13,8 @@ function removeActiveClass() {
         painel.classList.remove('active')
     })
 }
+
+// window.addEventListener("scroll", function () {
+//     let header = this.document.querySelector('.header')
+//     header.classList.toggle('rolagem', window.scrollY > 100)
+// })
