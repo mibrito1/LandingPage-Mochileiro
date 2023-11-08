@@ -9,21 +9,18 @@
 </head>
 
 <body>
-  <header class="header">
-    <!-- <div class="texto-inicial">
-      <h3>O que voce tem feito com os seus sonhos?</h3>
-    </div> -->
+
+  <header class="header" id="começo">
     <nav class="menu-cabecalho">
       <ul>
-        <li><a href="#">Vantagem de ser mochileiro</a></li>
-        <li><a href="#">Erros dos iniciantes</a></li>
-        <li><a href="#">Dica dos veteranos</a></li>
-
+        <li><a href="#texto-vantagens">Vantagem de ser mochileiro</a></li>
+        <li><a href="#texto-erros">Erros dos iniciantes</a></li>
+        <li><a href="#texto-dicas">Dica dos veteranos</a></li>
+        <li><a href="#eu">Quem sou</a></li>
       </ul>
-
     </nav>
-
   </header>
+
   <main class="main">
 
     <section class="section-cards-logo">
@@ -35,10 +32,7 @@
         <div class="texto-lateral">
           <p>Nãp importa de onde você esta vindo, mas sim qual o seu proximo destino!</p>
         </div>
-
       </section>
-
-
 
       <div class="container">
         <div class="painel active"
@@ -53,7 +47,6 @@
           style="background-image: url('https://images.unsplash.com/photo-1512632578888-169bbbc64f33?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
           <h3>Ásia</h3>
         </div>
-
         <div class="painel"
           style="background-image: url('https://images.unsplash.com/photo-1582637980978-209a19493322?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
           <h3>America do sul</h3>
@@ -62,11 +55,9 @@
           style="background-image: url('https://images.unsplash.com/photo-1561577553-674ce32847a4?auto=format&fit=crop&q=80&w=1470&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')">
           <h3>Destinos nacionais</h3>
         </div>
-
       </div>
 
     </section>
-
 
     <section class="textos-finais">
 
@@ -74,11 +65,9 @@
         <p>
           O que vc tem feito dos seus sonhos?
         </p>
-
       </div>
 
-
-      <aside class="texto-vantagens">
+      <div id="texto-vantagens" class="texto-vantagens">
         <h2>VANTAGENS</h2>
         <ul>
           <li class="selector">Os mochileiros têm a oportunidade de mergulhar profundamente nas culturas locais,
@@ -94,15 +83,16 @@
             culturas,
             ou apenas ver.</li>
         </ul>
-
-      </aside>
+        <div class="botao-dicas">
+          <button class="botaodofim"><a href="#começo">voltar ao topo</a></button>
+        </div>
+      </div>
 
       <div class="texto-intermediario">
-
         <p>Explore o mundo e crie memorias!</p>
       </div>
 
-      <aside class="texto-erros">
+      <div class="texto-erros" id="texto-erros">
         <h2>ERROS DE INICIANTES</h2>
         <UL>
           <li class="texto-err">Exagerar nas bagagens, A primeira regra de quem viaja como mochileiro é levar apenas o
@@ -114,29 +104,62 @@
           <li class="texto-err">Não fazer seguro viagem, problemas de saude podem sair muito caros.</li>
           <li class="texto-err">Não saber nada sobre a cultura do lugar onde vai visitar</li>
         </UL>
-
-      </aside>
-
-      <div class="texto-intermediario">
-        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Esse ipsa nemo ratione, quod architecto,</p>
+        <div class="botao-dicas">
+          <button class="botaodofim"><a href="#começo">voltar ao topo</a></button>
+        </div>
       </div>
 
-      <aside class="texto-dicas">
-        <h2>Dica de ouro</h2>
-        <p class="texto-dic">Fassa backup de suas fotos e vídeos. Parece bobo, mas perder todos os registros durante a
-          viagem é algo que acontece com muita frequência. Reserve um tempo do dia, para fazer backup de todas suas
-          fotos e vídeos em um pendrive ou nuvem. Você garante todos os cliques do dia e ainda libera espaço na câmera
-          ou celular.</p>
-      </aside>
       <div class="texto-intermediario">
-        <p>VIAJE!</p>
+        <p>As montanhas podem ser escaladas, os oceanos cruzados; não há limites para o espírito aventureiro.</p>
+      </div>
+
+      <div class="texto-dicas" id="texto-dicas">
+        <h2>DICA DE OURO!</h2>
+        <UL>
+          <li class="texto-dic">Realize cópias de segurança de suas fotos e vídeos. Pode parecer algo simples, porém
+            perder todos os registros durante a viagem é um acontecimento bastante comum. Dedique um momento do seu dia
+            para efetuar cópias de segurança de todas as suas imagens e vídeos, seja em um dispositivo USB ou
+            armazenamento na nuvem. Isso garantirá a preservação de todos os momentos capturados ao mesmo tempo que
+            liberará espaço em sua câmera ou celular.</li>
+        </UL>
+        <div class="botao-dicas">
+          <button class="botaodofim"><a href="#começo">voltar ao topo</a></button>
+        </div>
       </div>
 
     </section>
 
   </main>
-  <footer class="rodape">
-    <p class="p-rodape"><u>Desenvolvedor:</u> Mirian Brito | direitos reservados.</p>
+
+
+  <footer class="rodape" id="eu">
+
+    <!-- texto com letra grande -->
+    <div class="texto-rodape">
+      <p>Viaje, sonhe, descubra. A jornada é a recompensa.</p>
+    </div>
+
+    <!-- div com a biografia e a logo da empresa -->
+    <div class="div-eu-logo">
+      <img src="./imagens/logo-trasparente.png" height="270px" width="270px" alt="logo">
+      <p class="biografia">"Olá! Sou Mirian e lhe dou as boas-vindas ao meu projeto Mochileiro. Esta landing page
+        apresenta
+        dicas de viagens e serve como uma plataforma para aprimorar minhas habilidades em HTML e CSS. Espero que
+        desfrute
+        da visita."</p>
+    </div>
+    <!-- div com os icones das redes sociais e o botao de voltar ao topo -->
+    <div class="icones-botao-rodape">
+      <div class="icones-rodape">
+        <a href="https://github.com/mibrito1" target="_blank" rel="noopener noreferrer"><img class="icone"
+            src="./imagens/github_733553.png" width="50px" height="50px" alt="icone"></a>
+        <a href="https://www.linkedin.com/in/mirian-brito-02a544158/" target="_blank" rel="noopener noreferrer"> <img
+            class="icone" src="./imagens/linkedin_3536505.png" width="50px" height="50px" alt="icone"></a>
+      </div>
+      <div class="div-botao-rodape">
+        <button class="botaodofim"><a href="#começo">voltar ao topo</a></button>
+      </div>
+    </div>
 
   </footer>
   <script src="script.js"></script>
