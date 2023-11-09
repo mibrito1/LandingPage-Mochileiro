@@ -10,7 +10,14 @@
 
 <body>
 
-  <header id="começo">
+  <header class="header" id="começo">
+    <div>
+      <button onclick="animar()" id="btn-menu" class="botao-hamburguer">
+        <span class="linha"></span>
+        <span class="linha"></span>
+        <span class="linha"></span>
+      </button>
+    </div>
 
     <ul class="menu-cabecalho">
       <li><a href="#texto-vantagens">Vantagem de ser mochileiro</a></li>
@@ -18,12 +25,17 @@
       <li><a href="#texto-dicas">Dica dos veteranos</a></li>
       <li><a href="#eu">Quem sou</a></li>
     </ul>
-    <ul class="menu-mobile">
-      <li><a href="#texto-vantagens">Vantagem de ser mochileiro</a></li>
-      <li><a href="#texto-erros">Erros dos iniciantes</a></li>
-      <li><a href="#texto-dicas">Dica dos veteranos</a></li>
-      <li><a href="#eu">Quem sou</a></li>
-    </ul>
+
+
+    <div class="menu-mobile" id="menu-mobile">
+      <ul>
+        <li><a href="#texto-vantagens">Vantagem de ser mochileiro</a></li>
+        <li><a href="#texto-erros">Erros dos iniciantes</a></li>
+        <li><a href="#texto-dicas-mobile">Dica dos veteranos</a></li>
+        <li><a href="#eu">Quem sou</a></li>
+      </ul>
+
+    </div>
 
 
   </header>
@@ -93,7 +105,7 @@
             culturas,
             ou apenas ver.</li>
         </ul>
-        <div class="botao-voltar">
+        <div class="botao-voltar-vantagens">
           <button class="botaodofim"><a href="#começo">voltar ao topo</a></button>
         </div>
       </div>
@@ -104,7 +116,7 @@
 
       <div class="texto-erros" id="texto-erros">
         <h2>ERROS DE INICIANTES</h2>
-        <UL>
+        <ul>
           <li class="texto-err">Exagerar nas bagagens, A primeira regra de quem viaja como mochileiro é levar apenas o
             que
             é essencial.</li>
@@ -113,8 +125,8 @@
             caro na passagem de volta por exemplo.</li>
           <li class="texto-err">Não fazer seguro viagem, problemas de saude podem sair muito caros.</li>
           <li class="texto-err">Não saber nada sobre a cultura do lugar onde vai visitar</li>
-        </UL>
-        <div class="botao-voltar">
+        </ul>
+        <div class="botao-voltar-erros">
           <button class="botaodofim"><a href="#começo">voltar ao topo</a></button>
         </div>
       </div>
@@ -126,13 +138,15 @@
       <div class="texto-dicas" id="texto-dicas">
         <h2>DICA DE OURO!</h2>
         <UL>
-          <li class="texto-dic">Realize cópias de segurança de suas fotos e vídeos. Pode parecer algo simples, porém
+          <li class="texto-dic" id="texto-dicas-mobile">Realize cópias de segurança de suas fotos e vídeos. Pode parecer
+            algo
+            simples, porém
             perder todos os registros durante a viagem é um acontecimento bastante comum. Dedique um momento do seu dia
             para efetuar cópias de segurança de todas as suas imagens e vídeos, seja em um dispositivo USB ou
             armazenamento na nuvem. Isso garantirá a preservação de todos os momentos capturados ao mesmo tempo que
             liberará espaço em sua câmera ou celular.</li>
         </UL>
-        <div class="botao-">
+        <div class="botao-voltar-dicas">
           <button class="botaodofim"><a href="#começo">voltar ao topo</a></button>
         </div>
       </div>
@@ -172,7 +186,13 @@
     </div>
 
   </footer>
-  <script src="script.js"></script>
+
+
+  <script src="script.js">
+
+  </script>
+
+
 </body>
 
 </html>
