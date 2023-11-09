@@ -18,3 +18,4 @@ function removeActiveClass() {
 //     let header = this.document.querySelector('.header')
 //     header.classList.toggle('rolagem', window.scrollY > 100)
 // })
+
